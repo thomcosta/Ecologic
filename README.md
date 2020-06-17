@@ -7,7 +7,7 @@ Open source web application for registration of recyclable waste collection poin
 
 
 ## How it was build:
-With Node.js and using Nunjucks as a template engine to increment and make HTML dynamic. It has a SQL database with SQLite for the registration of waste collection points, and uses IBGE(Brasilian institute of geography and statistics) database to grab states and cities info.
+With Node.js and using Nunjucks as a template engine to increment and make HTML dynamic. It has a SQL database with MySQL for the registration of waste collection points, and uses IBGE(Brasilian institute of geography and statistics) database to grab states and cities infos.
 
     Obs: It has a Express server confuguration that must to be changed (for "false") before uploaded to a web host:
                      
@@ -20,20 +20,21 @@ With Node.js and using Nunjucks as a template engine to increment and make HTML 
       
 ## Folder structure
     pontos_de_coleta  
-      assets 
-        imagens.svg
-          scripts
-              index.js
-          styles
-              main.css
+      public
+        assets 
+           imagens.svg
+        scripts
+           index.js
+         styles
+            main.css
       src
           database
-              db.js
+             db.js
           views
-              index.html
+             index.html
           server.js
-    node_modules    
+      node_modules    
     
  ###### Feel free to use and contribute
-    I has responsive pages, also very basic, that must be improoved as the search features.
+    It has responsive pages, also very basic, that must be improoved as the search features.
  Created by Thom M. Costa based on a RocketSeat bootcamp project - 2020 jun.
